@@ -1,5 +1,9 @@
 const { expect } = require("chai");
 
+// Import the classes from your index.js file
+const { Breakfast, Lunch, Dinner } = require("../index");
+
+// Rest of your test code remains unchanged
 describe("breakfast", () => {
   it("has a class of breakfast", () => {
     expect(new Breakfast()).to.be.an.instanceof(Breakfast);
@@ -44,3 +48,4 @@ describe("dinner", () => {
     // since #dessert is a private field, we can't test for its value! We'll trust that you added it ;)
   });
 });
+
